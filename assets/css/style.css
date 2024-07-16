@@ -1,0 +1,193 @@
+body{
+    background-image: url(../images/bg.png);
+    background-repeat: repeat;
+    
+    
+}
+.cabecalho{
+    background-color: white;
+    height: 80px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+    
+}
+
+header img{
+    width: 120px;
+    margin-top: 15px;
+    
+      
+
+}
+.cabecalho .links-cabecalho ul {
+    display: flex;
+    
+    
+}
+.cabecalho .links-cabecalho ul li{
+    margin-right: 35px;
+    margin-top: 15px;
+    
+} 
+
+.cabecalho .links-cabecalho ul li a{
+    color: black;
+    text-decoration: none;
+}
+#carouselExampleCaptions{
+    width: 90%;
+    margin: 15px auto;
+
+}
+
+.destaque, .mapa{
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+#album{
+    background-color: rgba(254, 255, 254, 0.8);
+    border-radius: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-areas: "ny londres chicago tailandia"
+    "hawaii cruzeiro noruega nordeste"; */
+    max-width: 1140px;
+    margin: 15px auto;
+    
+
+}
+#album .ny, .londres, .chicago, .tailandia, .hawaii,
+.cruzeiro, .noruega,.nordeste {
+    margin: 15px auto ;
+    
+}
+
+#album h1{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+    
+}
+#album p{
+    font-size: 15px;
+    
+}
+#album img{
+    border-radius: 5px;
+}
+
+#album a{
+    color: chocolate;
+    text-decoration: none;
+    
+}
+
+
+
+footer{
+    background-color: rgba(254, 255, 254, 1);
+    display: flex;
+    
+    
+    
+}
+footer h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+footer .info-aluna{
+    display: flex;
+    
+
+}
+
+footer .info-aluna img{
+    width: 100px;
+    height: 90px;
+    border-radius: 100%;
+    
+}
+
+footer ul li span{
+    font-weight: 700;
+}
+
+footer .sobre{
+    max-width: 50%;
+    border-right: 1px solid lightgray;
+    text-align: justify;
+    padding: 15px;
+}
+
+footer .autoria{
+    margin-left: 15px;
+    
+    
+}
+
+.social{
+    display: flex; 
+}
+
+.social i{
+    margin-left: 10px;
+    color: lightsalmon;
+}
+
+@media(max-width:760px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    footer div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .sobre{
+        border-right: 0;
+        max-width: 90%;
+        
+    }
+    footer .autoria{
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:400px){
+    .cabecalho{
+        display: flex;
+        flex-wrap: wrap;
+        height: 150px;
+        
+    }
+
+    header.cabecalho{
+        justify-content: center;
+    
+    }
+
+    .cabecalho img.logo, ul{
+        margin: 0;
+    }
+
+    .cabecalho img.logo{
+        max-width: 80px;
+    }
+
+    .links-cabecalho{
+        width: 300px;
+        text-align: center;
+    }
+}
+
+
